@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:foot_ball/splash_screen/splash_screen.dart';
+import 'package:foot_ball/today_games_details_page_screen/today_game_details_page_view.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context){
     return  GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreenPage(),
+      home: TodayGamesDetailsPageView(),
     );
   }
 
