@@ -8,6 +8,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'calender_page_screen/calender_page_view.dart';
+import 'news_page_screen/news_page_view.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context){
     return  GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CalenderPageView(),
+      home: NewsPageView(),
     );
   }
 
