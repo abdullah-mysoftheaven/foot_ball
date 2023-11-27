@@ -41,6 +41,7 @@ dependencies:
   font_awesome_flutter: ^10.6.0
   intl: ^0.18.1
   url_launcher: ^6.2.1
+  sticky_headers: ^0.3.0+2
 
 dev_dependencies:
   flutter_test:

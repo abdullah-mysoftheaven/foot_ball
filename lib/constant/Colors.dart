@@ -1,5 +1,8 @@
 import 'dart:ui';
 
+const Color categoryBgColor  = Color(0xFF2E2E2F);
+// const Color asdfgh  = Color(0xFF6C6C6C);
+
 ///login page
 const Color bijoyTechJobColor = Color(0xFF2F64A3);
 
