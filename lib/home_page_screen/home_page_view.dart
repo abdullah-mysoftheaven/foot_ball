@@ -31,8 +31,11 @@ class HomePageView extends StatelessWidget {
                   // mainAxisAlignment: MainAxisAlignment.center,
                   children: [
 
+                    myTitleBar(),
+
                     Row(children: [
-                      Expanded(child: TabBar(
+                      Expanded(child:
+                      TabBar(
                         tabs: [
                           Tab(text: 'Home',),
                           Tab(text: 'Live',),
@@ -104,6 +107,77 @@ class HomePageView extends StatelessWidget {
     );
   }
 
+
+   Widget myTitleBar( ) {
+
+     return Container(
+       padding: EdgeInsets.only(top: 10,bottom: 10),
+       child: Row(
+         children: [
+           SizedBox(width: 15,),
+           InkWell(
+               onTap: (){
+                 Get.back();
+               },
+               child: Icon(Icons.arrow_back_ios,
+                 size: 25,
+                 color: Colors.white,
+               )
+           ),
+           SizedBox(width: 10,),
+           Container(
+             padding: EdgeInsets.all(2),
+
+
+
+             child: Icon(
+               Icons.sports_volleyball_outlined,
+               size: 35,
+               // color: Colors.white,
+             ),
+             decoration: BoxDecoration(
+                 color: Colors.white,
+               borderRadius: BorderRadius.circular(3)
+             ),
+           ),
+           Expanded(child: Container()),
+           SizedBox(width: 15,),
+           InkWell(
+               onTap: (){},
+               child: Icon(Icons.notifications_rounded,
+                 size: 25,
+                 color: Colors.white,
+               )
+           ),
+           SizedBox(width: 20,),
+           InkWell(
+               onTap: (){},
+               child: Icon(Icons.refresh,
+                 size: 25,
+                 color: Colors.white,
+               )
+           ),
+           SizedBox(width: 20,),
+           InkWell(
+               onTap: (){},
+               child: Icon(Icons.star,
+                 size: 25,
+                 color: Colors.white,
+               )
+           ),
+           SizedBox(width: 20,),
+           InkWell(
+               onTap: (){},
+               child: Icon(Icons.search,
+                 size: 25,
+                 color: Colors.white,
+               )
+           ),
+           SizedBox(width: 15,),
+         ],
+       ),
+     );
+   }
 
 
    Widget categoryItem( ) {
