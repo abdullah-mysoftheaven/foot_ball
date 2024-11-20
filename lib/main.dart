@@ -29,7 +29,9 @@ class MyApp extends StatelessWidget {
     return  GetMaterialApp(
       debugShowCheckedModeBanner: false,
       // home: PremierLeaguePageView(),
-      home: HomePageView(),
+      // home: HomePageView(),
+      home: CalenderPageView(),
+      // home: PremierLeaguePageView(),
     );
   }
 
